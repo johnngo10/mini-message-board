@@ -1,0 +1,12 @@
+<%- include('partials/head')%>
+<a href="/new">New Messsage</a>
+<div>
+  <% messages.map((value) => { %>
+  <div>
+    <p><%=value.user%></p>
+    <p><%=value.text%></p>
+    <p><%=value.added%></p>
+  </div>
+  <% })%>
+</div>
+<%- include('partials/footer')%>
