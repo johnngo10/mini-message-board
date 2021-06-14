@@ -2,7 +2,7 @@
 
 A simple message board built with express.
 
-- [Live Demo](http://xuanngo.com/mint-signup-page/)
+- [Live Demo](https://mini-message-board-xuan.herokuapp.com/)
 
 ## Built With
 
