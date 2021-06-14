@@ -1,12 +1,16 @@
 <%- include('partials/head')%>
-<a href="/new">New Messsage</a>
-<div>
+<div class="link">
+  <a href="/new">New Messsage</a>
+</div>
+<div id="homepage">
   <% messages.map((value) => { %>
-  <div>
-    <p><%=value.user%></p>
-    <p><%=value.text%></p>
-    <p><%=value.added%></p>
+  <div class="messages">
+    <p class="user"><%=value.user%></p>
+    <p class="text"><%=value.text%></p>
+    <p class="added"><%=value.added%></p>
   </div>
   <% })%>
+  <div class="push"></div>
 </div>
-<%- include('partials/footer')%>
+</body>
+</html>

@@ -1,16 +1,18 @@
 const express = require("express");
 const router = express.Router();
 
+const today = new Date();
+
 const messages = [
   {
     text: "Hi there!",
     user: "Amando",
-    added: new Date(),
+    added: today.toDateString(),
   },
   {
     text: "Hello World!",
     user: "Charles",
-    added: new Date(),
+    added: today.toDateString(),
   },
 ];
 
@@ -27,7 +29,7 @@ router.post("/new", function (req, res) {
   const messageObject = {
     text: message,
     user: author,
-    added: new Date(),
+    added: today.toDateString(),
   };
   messages.push(messageObject);
   res.redirect("/");

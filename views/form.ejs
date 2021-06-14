@@ -1,19 +1,23 @@
 <%- include('partials/head')%>
-<a href="/">Back to homepage</a>
+<div class="link">
+  <a href="/">Back to homepage</a>
+</div>
 <h2>New Message</h2>
 <form method="POST" action="/new">
-  <fieldset>
+  <fieldset class="input-container">
     <label for="author">
       Author:
-      <input type="text" name="author" />
+      <input type="text" name="author" class="author-input" />
     </label>
     <label for="message">
       Message:
-      <textarea type="text" name="message"></textarea>
+      <textarea type="text" name="message" class="message-input"></textarea>
     </label>
   </fieldset>
-  <fieldset>
-    <input type="submit" />
+  <fieldset class="submit-container">
+    <input type="submit" class="submit-button" />
   </fieldset>
+  <div class="push"></div>
 </form>
-<%- include('partials/footer')%>
+</body>
+</html>
